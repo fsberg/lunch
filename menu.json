@@ -1,0 +1,316 @@
+{
+ "fetched": "2026-11-10T09:57:48.612Z",
+ "restaurants": [
+  {
+   "id": "sour",
+   "name": "Sour Café",
+   "where": "Drottningtorget 1",
+   "url": "https://www.sourcafe.se/",
+   "fb": null,
+   "note": null,
+   "week": 46,
+   "image": "https://www.sourcafe.se/wp-content/uploads/2026/11/Skarmavbild-2026-11-10-kl.-09.20.05.png",
+   "days": null,
+   "info": [
+    "Today's Sour 125 kr och veckans oklassiska husman 135 kr, 11–15",
+    "Sallad, bröd och kaffe ingår"
+   ]
+  },
+  {
+   "id": "vastan",
+   "name": "Restaurang Västan",
+   "where": "Högskolan Väst, Gustava Melins gata 2",
+   "url": "https://restaurangvastan.se/",
+   "fb": null,
+   "note": "Dagens gröna och dagens pasta läggs ut på Västans Facebook/Instagram varje morgon.",
+   "week": 46,
+   "days": [
+    [
+     {
+      "label": "",
+      "text": "Fisk bordelaise med kall dillsås & kokt potatis"
+     },
+     {
+      "label": "",
+      "text": "Korvstroganoff med ris"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Stekt fläsk med klassiska bruna bönor alt. löksås, kokt potatis & lingonsylt"
+     },
+     {
+      "label": "",
+      "text": "Kycklingfilé med grönpepparsås"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Panerad, stekt fiskfilé med räkröra & kokt potatis"
+     },
+     {
+      "label": "",
+      "text": "Kebabspett med klassisk västkustkebabsås & klyftpotatis"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Pulled pork med vitlökssås & ugnsrostad potatis"
+     },
+     {
+      "label": "",
+      "text": "Kycklingryta med röd curry & ångkokt ris"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Fjärillskotlett & chilibearneaise & potatisgratäng"
+     },
+     {
+      "label": "",
+      "text": "Fiskfilé med frästa champinjoner & dill, serveras med citronsås & kokt potatis"
+     }
+    ]
+   ],
+   "info": [
+    "Dagens lunch 99 kr | Studentlunch 90 kr",
+    "Mån-fre 11:00-13:30. Öppet för alla."
+   ]
+  },
+  {
+   "id": "bacchus",
+   "name": "Restaurang Bacchus",
+   "where": "Folkets Hus Kulturhuset",
+   "url": "https://www.trollhattan.fh.se/sv/restaurang/dagens-lunch",
+   "fb": null,
+   "note": null,
+   "week": 46,
+   "days": [
+    [
+     {
+      "label": "",
+      "text": "Vegobiff bourgogne med smålök, champinjoner, rökt anamma och husets potatismos."
+     },
+     {
+      "label": "",
+      "text": "Husets pannbiff med smålök, champinjoner, sidfläsk och husets potatismos."
+     },
+     {
+      "label": "",
+      "text": "Brynt senapskyckling, krämig örtsås serveras med matvetebakelse, smaksat med bacon och gräslök."
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Husets majs och morotsplättar med grönsaksratatouille och knaperstekt mat vete."
+     },
+     {
+      "label": "",
+      "text": "Knaperstekt fläsk med raggmunk, bruna bönor, löksås och rårörda lingon."
+     },
+     {
+      "label": "",
+      "text": "Dagens fångst med mozzarella och basilikatäcke serveras med sås på soltorkad tomat."
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Pasta rigatoni med cocktailtomat, basilika, mozzarella och brynt tofu."
+     },
+     {
+      "label": "",
+      "text": "Kalvfärsbiff med champinjonsky, syltad sparris och potatis och palsternackspuré."
+     },
+     {
+      "label": "",
+      "text": "Mios nudel wok thaistyle med kyckling och grönsaker."
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Husets goda svampsoppa med hembakat bröd."
+     },
+     {
+      "label": "",
+      "text": "Gulaschsoppa med gräddfil samt pannkaksbuffé, sylt och grädde."
+     },
+     {
+      "label": "",
+      "text": "Pestobakad laxfilé med grillad paprikasky, serveras med zucchini och pilaffris."
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Dubbelpanerad selleribiff med choronsås, haricotsverts samt chili och sesambakad potatis."
+     },
+     {
+      "label": "",
+      "text": "Fläsknoisette med choronsås, bönsallad med scharlottenlök samt chili och sesambakad potatis."
+     },
+     {
+      "label": "",
+      "text": "Pasta rigatoni med cocktailtomat, basilika, mozzarella och strimlad biff."
+     },
+     {
+      "label": "",
+      "text": "Veronikas Silviakaka."
+     }
+    ]
+   ],
+   "info": [
+    "Dagens lunch 135 kr 11:30 - 14:00",
+    "Seniorlunch 65+ 123 kr 12:45 - 14:00",
+    "Veckans sallad 99 kr.",
+    "I lunchen ingår sallad, måltidsdryck, smör & bröd, kaffe & kaka.",
+    "Veckans sallad: Klassisk räksallad eller grekisk sallad med fetaost."
+   ]
+  },
+  {
+   "id": "oden",
+   "name": "Oden Bistro",
+   "where": "Kungsgatan 30",
+   "url": "https://www.odenbistro.com/menyer",
+   "fb": null,
+   "note": null,
+   "week": 46,
+   "days": [
+    [
+     {
+      "label": "Kött",
+      "text": "Långkokt fläskkarré med champinjonsås, serveras med potatismos."
+     },
+     {
+      "label": "Fisk",
+      "text": "Panerad fiskfilé med remouladsås, serveras med kokt potatis."
+     },
+     {
+      "label": "Pasta",
+      "text": "Pasta med kyckling i ostsås, toppas med parmesanost."
+     },
+     {
+      "label": "Vegan",
+      "text": "Bönbiffar med kall sås, serveras med pommes frites."
+     },
+     {
+      "label": "Vegan",
+      "text": "Caesarsallad med pankopanerad halloumi ost toppas med parmesanost och spröda krutonger."
+     }
+    ],
+    [
+     {
+      "label": "Kött",
+      "text": "Stekt fläsk med raggmunkar, alt. kokt potatis och löksås, alt. bruna bönor."
+     },
+     {
+      "label": "Fisk",
+      "text": "Pocherad fiskfilé med gräslökssås, serveras med potatismos."
+     },
+     {
+      "label": "Pasta",
+      "text": "Pasta med nötkött i paprika sås, toppas med parmesanost."
+     },
+     {
+      "label": "Vegan",
+      "text": "Bönbiffar med kall sås, serveras med pommes frites."
+     },
+     {
+      "label": "Vegan",
+      "text": "Caesarsallad med pankopanerad halloumi ost toppas med parmesanost och spröda krutonger."
+     }
+    ],
+    [
+     {
+      "label": "Kött",
+      "text": "Ugnsgrillad kycklingfilé med svartpeppar sås, serveras med rostad potatis."
+     },
+     {
+      "label": "Fisk",
+      "text": "Havets wallenbergare med senapssås, serveras med potatismos."
+     },
+     {
+      "label": "Pasta",
+      "text": "Lasagne al forno (köttfärs)."
+     },
+     {
+      "label": "Vegan",
+      "text": "Bönbiffar med kall sås, serveras med pommes frites."
+     },
+     {
+      "label": "Vegan",
+      "text": "Caesarsallad med pankopanerad halloumi ost toppas med parmesanost och spröda krutonger."
+     }
+    ],
+    [
+     {
+      "label": "Kött",
+      "text": "Hemlagad pannbiff med kantarellsås och rårörda lingon, serveras med potatismos."
+     },
+     {
+      "label": "Fisk",
+      "text": "Stekt fiskfilé med brynt smör, serveras med kokt potatis."
+     },
+     {
+      "label": "Pasta",
+      "text": "Pasta carbonara (bacon och champinjoner), toppas med parmesanost."
+     },
+     {
+      "label": "Vegan",
+      "text": "Bönbiffar med kall sås, serveras med pommes frites."
+     },
+     {
+      "label": "Vegan",
+      "text": "Caesarsallad med pankopanerad halloumi ost toppas med parmesanost och spröda krutonger."
+     }
+    ],
+    [
+     {
+      "label": "Kött",
+      "text": "Fläskfilé med rödvinssås, serveras med potatisgratäng."
+     },
+     {
+      "label": "Fisk",
+      "text": "Fisksoppa med saffrans aioli och vitlöksbröd."
+     },
+     {
+      "label": "Pasta",
+      "text": "Lyxpasta."
+     },
+     {
+      "label": "Vegan",
+      "text": "Bönbiffar med kall sås, serveras med pommes frites."
+     },
+     {
+      "label": "Vegan",
+      "text": "Caesarsallad med pankopanerad halloumi ost toppas med parmesanost och spröda krutonger."
+     }
+    ]
+   ],
+   "info": [
+    "Vardagar 11–14.30. Kött och fisk 139 kr, pasta 135 kr, vegan 129 kr, pensionär 130 kr",
+    "Salladsbuffé, bröd, kaffe, kaka och måltidsdryck ingår"
+   ]
+  },
+  {
+   "id": "maeprai",
+   "name": "Mae Prai",
+   "where": "Storgatan 39",
+   "url": "https://www.facebook.com/maeprairestaurang",
+   "fb": "https://www.facebook.com/maeprairestaurang",
+   "note": "Mae Prai lägger bara ut lunchmenyn på Facebook och Instagram.",
+   "week": null,
+   "days": null,
+   "info": [
+    "Dagens lunch från 139 kr, tisdag–fredag 11–14.30",
+    "3 varmrätter, salladsbuffé, misosoppa, kaffe och kaka ingår"
+   ]
+  }
+ ]
+}

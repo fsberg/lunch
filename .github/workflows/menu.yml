@@ -1,0 +1,28 @@
+name: Hämta lunchmenyer
+on:
+  schedule:
+    # vardagar, var 30:e minut 06–12 svensk tid (UTC +1/+2) och söndag kväll för nästa vecka
+    - cron: '5,35 4-10 * * 1-5'
+    - cron: '0 17,19 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: menu
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scrape.mjs
+      - name: Spara om något ändrats
+        run: |
+          if git diff --quiet -- menu.json; then echo "Inga ändringar"; exit 0; fi
+          git config user.name "lunch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add menu.json
+          git commit -m "Lunchmenyer $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+          git push

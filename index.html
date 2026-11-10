@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lunch i Trollhättan</title>
+<meta name="theme-color" content="#1f6f5c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+<style>
+:root { --bg:#f6f4ef; --card:#fff; --ink:#1d1f1e; --mute:#6b706d; --line:#e4e0d7; --acc:#1f6f5c; --accsoft:#e3f1ec; --warn:#a15c00; --warnsoft:#fff3e0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#141615; --card:#1e2120; --ink:#ecefed; --mute:#9ba29e; --line:#2e3331; --acc:#5cc3a4; --accsoft:#1d322b; --warn:#f0b35a; --warnsoft:#2e2414; } }
+:root[data-theme="dark"] { --bg:#141615; --card:#1e2120; --ink:#ecefed; --mute:#9ba29e; --line:#2e3331; --acc:#5cc3a4; --accsoft:#1d322b; --warn:#f0b35a; --warnsoft:#2e2414; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; -webkit-text-size-adjust:100%; }
+header { position:sticky; top:0; z-index:5; background:var(--bg); padding:calc(10px + env(safe-area-inset-top)) 16px 8px; border-bottom:1px solid var(--line); }
+h1 { margin:0; font-size:20px; display:flex; align-items:center; gap:8px; }
+h1 small { font-weight:400; color:var(--mute); font-size:13px; margin-left:auto; }
+.days { display:flex; gap:6px; margin-top:10px; }
+.days button { flex:1; padding:8px 0; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:10px; font:inherit; font-size:14px; cursor:pointer; }
+.days button.on { background:var(--acc); border-color:var(--acc); color:#fff; font-weight:600; }
+.days button.today:not(.on) { border-color:var(--acc); color:var(--acc); font-weight:600; }
+main { max-width:680px; margin:0 auto; padding:12px 16px 40px; }
+.notice { background:var(--warnsoft); color:var(--warn); border-radius:10px; padding:8px 12px; font-size:14px; margin-bottom:12px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px; margin-bottom:12px; }
+.card h2 { margin:0; font-size:17px; display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
+.card h2 a { color:inherit; text-decoration:none; }
+.where { color:var(--mute); font-size:13px; font-weight:400; }
+.info { color:var(--mute); font-size:13px; margin:4px 0 10px; }
+ul.dishes { list-style:none; margin:0; padding:0; }
+ul.dishes li { padding:7px 0; border-top:1px solid var(--line); }
+ul.dishes li:first-child { border-top:0; }
+.lab { display:inline-block; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; background:var(--accsoft); color:var(--acc); border-radius:6px; padding:1px 6px; margin-right:6px; vertical-align:1px; }
+.empty { color:var(--mute); font-style:italic; }
+.stale { font-size:12px; color:var(--warn); }
+.note { font-size:13px; color:var(--mute); margin-top:8px; }
+.img { display:block; width:100%; border-radius:10px; border:1px solid var(--line); margin-top:4px; cursor:zoom-in; }
+.btn { display:inline-block; margin-top:8px; padding:8px 12px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--ink); font:inherit; font-size:14px; text-decoration:none; cursor:pointer; }
+.fb { width:100%; height:560px; border:0; border-radius:10px; margin-top:8px; background:#fff; }
+footer { color:var(--mute); font-size:12px; text-align:center; margin-top:16px; }
+footer button { background:none; border:0; color:var(--acc); font:inherit; cursor:pointer; text-decoration:underline; }
+.zoom { position:fixed; inset:0; background:rgba(0,0,0,.85); z-index:20; overflow:auto; display:flex; align-items:flex-start; justify-content:center; padding:16px; }
+.zoom img { max-width:100%; }
+.skel { height:90px; border-radius:14px; background:linear-gradient(90deg,var(--card),var(--line),var(--card)); background-size:200% 100%; animation:sk 1.2s infinite; margin-bottom:12px; }
+@keyframes sk { to { background-position:-200% 0; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>🍽️ Lunch i Trollhättan <small id="wk"></small></h1>
+  <nav class="days" id="days"></nav>
+</header>
+<main id="main"><div class="skel"></div><div class="skel"></div><div class="skel"></div></main>
+<script>
+// menu.json skrivs av GitHub Actions (scrape.mjs) varje vardagsmorgon.
+const NAMES = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag'];
+const SHORT = ['Mån', 'Tis', 'Ons', 'Tor', 'Fre'];
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+
+function isoWeek(d) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  t.setUTCDate(t.getUTCDate() + 4 - (t.getUTCDay() || 7));
+  return Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
+}
+const now = new Date();
+const wd = (now.getDay() + 6) % 7; // 0 = måndag
+const weekend = wd > 4;
+const thisWeek = isoWeek(now);
+let day = weekend ? 0 : wd, data = null;
+
+async function load() {
+  const r = await fetch('menu.json?t=' + Date.now(), { cache: 'no-store' });
+  const j = r.ok ? await r.json() : null;
+  if (!j || !j.restaurants) throw new Error('Kunde inte hämta menyerna');
+  return j;
+}
+
+function renderDays() {
+  $('#days').innerHTML = SHORT.map((n, i) =>
+    `<button data-d="${i}" class="${i === day ? 'on' : ''} ${i === wd ? 'today' : ''}" aria-pressed="${i === day}">${n}</button>`).join('');
+  $('#days').onclick = e => { const b = e.target.closest('button'); if (!b) return; day = +b.dataset.d; renderDays(); render(); };
+}
+
+function card(r) {
+  const stale = r.week && r.week !== thisWeek && !(weekend && r.week === thisWeek + 1);
+  const head = `<h2><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a> <span class="where">${esc(r.where)}</span></h2>`;
+  const info = (r.info || []).length ? `<div class="info">${r.info.map(esc).join(' · ')}</div>` : '';
+  const staleTxt = stale ? `<div class="stale">⚠ Menyn gäller vecka ${r.week}, inte den här veckan.</div>` : '';
+  let body = '';
+  const old = r.oldCopy ? `<div class="stale">Sidan svarade inte senast, så detta är den förra hämtningen.</div>` : '';
+  if (r.error) body = `<div class="empty">Kunde inte läsa menyn just nu (${esc(r.error)}).</div><a class="btn" href="${esc(r.url)}" target="_blank" rel="noopener">Öppna restaurangens sida</a>`;
+  else if (r.days) {
+    const list = r.days[day] || [];
+    body = list.length
+      ? `<ul class="dishes">${list.map(x => `<li>${x.label ? `<span class="lab">${esc(x.label)}</span>` : ''}${esc(x.text)}</li>`).join('')}</ul>`
+      : `<div class="empty">Ingen lunchmeny för ${NAMES[day].toLowerCase()}.</div>`;
+  } else if (r.image) {
+    body = `<div class="note">Menyn finns bara som bild – hela veckan står i den, ${NAMES[day].toLowerCase()} ingår.</div><img class="img" loading="lazy" src="${esc(r.image)}" alt="Veckans lunchmeny på ${esc(r.name)}">`;
+  } else if (r.fb) {
+    const closed = r.id === 'maeprai' && day === 0;
+    body = closed ? `<div class="empty">Ingen lunch på måndagar.</div>` : `<button class="btn" data-fb="${esc(r.fb)}">Visa dagens meny från Facebook</button> <a class="btn" href="https://www.instagram.com/maeprai/" target="_blank" rel="noopener">Instagram</a><div class="fbbox"></div>`;
+  }
+  const note = r.note && !(r.id === 'maeprai' && day === 0) ? `<div class="note">${esc(r.note)}</div>` : '';
+  return `<section class="card" id="r-${esc(r.id)}">${head}${info}${staleTxt}${old}${body}${note}</section>`;
+}
+
+function render() {
+  if (!data) return;
+  const notice = weekend ? `<div class="notice">Det är helg – här är lunchmenyerna för ${NAMES[day].toLowerCase()} (veckans meny kan vara förra veckans tills restaurangerna lagt ut nästa).</div>` : '';
+  const t = new Date(data.fetched);
+  $('#main').innerHTML = notice + data.restaurants.map(card).join('') +
+    `<footer>Menyerna ändrades senast ${t.toLocaleString('sv-SE', { weekday: 'long', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })} och kollas varje vardagsmorgon.<br>Bara lunch på vardagar. Källor: restaurangernas egna sidor och lunchsidan.se.</footer>`;
+  document.querySelectorAll('[data-fb]').forEach(b => b.onclick = () => {
+    const u = 'https://www.facebook.com/plugins/page.php?tabs=timeline&width=500&height=560&small_header=true&adapt_container_width=true&hide_cover=true&href=' + encodeURIComponent(b.dataset.fb);
+    b.nextElementSibling.nextElementSibling.innerHTML = `<iframe class="fb" src="${u}" loading="lazy" title="Facebook" allow="encrypted-media"></iframe>`;
+    b.remove();
+  });
+  document.querySelectorAll('.img').forEach(i => i.onclick = () => {
+    const z = document.createElement('div'); z.className = 'zoom'; z.innerHTML = `<img src="${i.src}" alt="">`; z.onclick = () => z.remove(); document.body.appendChild(z);
+  });
+}
+
+async function start(fresh) {
+  $('#wk').textContent = 'vecka ' + thisWeek;
+  renderDays();
+  try { data = await load(); render(); }
+  catch (e) { $('#main').innerHTML = `<div class="card"><b>Kunde inte hämta menyerna.</b><div class="info">Kontrollera nätet och försök igen.</div><button class="btn" onclick="start(true)">Försök igen</button></div>`; }
+}
+start(false);
+</script>
+</body>
+</html>
