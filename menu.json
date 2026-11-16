@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15T21:28:12.180Z",
+ "fetched": "2026-11-16T12:38:13.015Z",
  "restaurants": [
   {
    "id": "sour",
@@ -8,8 +8,8 @@
    "url": "https://www.sourcafe.se/",
    "fb": null,
    "note": null,
-   "week": 46,
-   "image": "https://www.sourcafe.se/wp-content/uploads/2026/11/Skarmavbild-2026-11-10-kl.-09.20.05.png",
+   "week": 47,
+   "image": "https://www.sourcafe.se/wp-content/uploads/2026/11/Skarmavbild-2026-11-16-kl.-11.13.40.png",
    "days": null,
    "info": [
     "Today's Sour 125 kr och veckans oklassiska husman 135 kr, 11–15",
@@ -23,15 +23,68 @@
    "url": "https://restaurangvastan.se/",
    "fb": null,
    "note": "Dagens gröna och dagens pasta läggs ut på Västans Facebook/Instagram varje morgon.",
-   "week": 46,
+   "week": 47,
    "days": [
-    [],
-    [],
-    [],
-    [],
-    []
+    [
+     {
+      "label": "",
+      "text": "Varmrökt lax med dillstuvad potatis"
+     },
+     {
+      "label": "",
+      "text": "Lomo saltado (peruansk gryta med oxkött)"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Stekt fläsk med klassiska raggmunkar alt."
+     },
+     {
+      "label": "",
+      "text": "löksås, kokt potatis & lingonsylt"
+     },
+     {
+      "label": "",
+      "text": "Kycklingfilé med soltorkade tomater"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Panerad, stekt fiskfilé med remouladsås & kokt potatis"
+     },
+     {
+      "label": "",
+      "text": "Wienerkorv med potatismos & gurkmajonnäs"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Lasagne"
+     },
+     {
+      "label": "",
+      "text": "Mustig fläskköttsgryta med ajvar, serveras med ris"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Svensk ryggbiff, serveras med vitlökssmör & rostad potatis"
+     },
+     {
+      "label": "",
+      "text": "Fiskgratäng"
+     }
+    ]
    ],
-   "info": []
+   "info": [
+    "ÖPPET FÖR ALLA",
+    "Studentlunch 90 kr | Dagens lunch 99 kr",
+    "Mån-fre 11:00-13:30"
+   ]
   },
   {
    "id": "bacchus",
@@ -40,26 +93,26 @@
    "url": "https://www.trollhattan.fh.se/sv/restaurang/dagens-lunch",
    "fb": null,
    "note": null,
-   "week": 46,
+   "week": 47,
    "days": [
     [
      {
       "label": "",
-      "text": "Vegobiff bourgogne med smålök, champinjoner, rökt anamma och husets potatismos."
+      "text": "Vegobiff med kapris och lök, vispad persiljesmör, rårörda lingon och pepparstekt potatis."
      },
      {
       "label": "",
-      "text": "Husets pannbiff med smålök, champinjoner, sidfläsk och husets potatismos."
+      "text": "Pannbiff med kapris och lök samt pepparsås, bakade potatis och grönsaker."
      },
      {
       "label": "",
-      "text": "Brynt senapskyckling, krämig örtsås serveras med matvetebakelse, smaksat med bacon och gräslök."
+      "text": "Flygande Jacob med bacon, banan, jordnötter och pilaffris."
      }
     ],
     [
      {
       "label": "",
-      "text": "Husets majs och morotsplättar med grönsaksratatouille och knaperstekt mat vete."
+      "text": "Morotsbiffar med bakade rödbetor och husets potatispuré."
      },
      {
       "label": "",
@@ -67,45 +120,53 @@
      },
      {
       "label": "",
-      "text": "Dagens fångst med mozzarella och basilikatäcke serveras med sås på soltorkad tomat."
+      "text": "Dagens fångst smörstekt med paprika. Serveras med skagensås samt ljummen bulgursallad."
      }
     ],
     [
      {
       "label": "",
-      "text": "Pasta rigatoni med cocktailtomat, basilika, mozzarella och brynt tofu."
+      "text": "Vego Wallenbergare med brynt smör, gröna ärtor, rårörda lingon och husets potatispuré."
      },
      {
       "label": "",
-      "text": "Kalvfärsbiff med champinjonsky, syltad sparris och potatis och palsternackspuré."
+      "text": "Smörstekt laxfjärril med kryddsmör och juliennegrönsaker. Serveras med potatis och palsternackspuré."
      },
      {
       "label": "",
-      "text": "Mios nudel wok thaistyle med kyckling och grönsaker."
+      "text": "Wallenbergare med brynt smör, gröna ärtor, rårörda lingon och husets potatispuré."
      }
     ],
     [
      {
       "label": "",
-      "text": "STÄNGT, Restaurangen är abonnerad."
+      "text": "Spenatsoppa med ägghalva och hembakat bröd."
+     },
+     {
+      "label": "",
+      "text": "Husets ärtsoppa eller köttsoppa med pannkaksbuffé, sylt och vispad grädde."
+     },
+     {
+      "label": "",
+      "text": "Mios nudelwok Thai style med kyckling och grönsaker."
      }
     ],
     [
      {
       "label": "",
-      "text": "Dubbelpanerad selleribiff med choronsås, haricotsverts samt chili och sesambakad potatis."
+      "text": "Bakad zucchini med västerbottenost, surkål och rostad potatis."
      },
      {
       "label": "",
-      "text": "Fläsknoisette med choronsås, bönsallad med scharlottenlök samt chili och sesambakad potatis."
+      "text": "Bräserad slottsstek med gräddsås, pressgurka och kokt potatis."
      },
      {
       "label": "",
-      "text": "Pasta rigatoni med cocktailtomat, basilika, mozzarella och strimlad biff."
+      "text": "Krämig pasta med oxfilé, mild grönpeppar, champinjoner och dijonsenap."
      },
      {
       "label": "",
-      "text": "Veronikas Silviakaka."
+      "text": "Vaniljglass med varma bär."
      }
     ]
    ],
