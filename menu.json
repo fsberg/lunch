@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-22T22:16:51.015Z",
+ "fetched": "2026-11-23T14:23:54.431Z",
  "restaurants": [
   {
    "id": "sour",
@@ -8,8 +8,8 @@
    "url": "https://www.sourcafe.se/",
    "fb": null,
    "note": null,
-   "week": 47,
-   "image": "https://www.sourcafe.se/wp-content/uploads/2026/11/Skarmavbild-2026-11-16-kl.-11.13.40.png",
+   "week": null,
+   "image": "https://www.sourcafe.se/wp-content/uploads/2026/11/IMG_5236.jpeg",
    "days": null,
    "info": [
     "Today's Sour 125 kr och veckans oklassiska husman 135 kr, 11–15",
@@ -23,15 +23,92 @@
    "url": "https://restaurangvastan.se/",
    "fb": null,
    "note": "Dagens gröna och dagens pasta läggs ut på Västans Facebook/Instagram varje morgon.",
-   "week": 47,
+   "week": 48,
    "days": [
-    [],
-    [],
-    [],
-    [],
-    []
+    [
+     {
+      "label": "",
+      "text": "Sweet chili-gratinerad laxfilé serveras med kokt"
+     },
+     {
+      "label": "",
+      "text": "potatis"
+     },
+     {
+      "label": "",
+      "text": "Paprikafrästa falukorvsstrimlor ackompanjeras av"
+     },
+     {
+      "label": "",
+      "text": "stuvade makaroner"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Stekt fläsk med klassiska bruna bönor alt."
+     },
+     {
+      "label": "",
+      "text": "löksås, kokt potatis & lingonsylt"
+     },
+     {
+      "label": "",
+      "text": "Kycklingsatay serveras med jordnötssås & ångkokt"
+     },
+     {
+      "label": "",
+      "text": "ris"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Panerad, stekt laxfilé med räkröra & kokt potatis"
+     },
+     {
+      "label": "",
+      "text": "Köttbullar med potatismos avnjuts tillsammans med"
+     },
+     {
+      "label": "",
+      "text": "gräddsås"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Kycklingwok serveras med kokos- & sweet chilisås"
+     },
+     {
+      "label": "",
+      "text": "Kalops med kokt potatis & rödbetor"
+     }
+    ],
+    [
+     {
+      "label": "",
+      "text": "Piccata milanese serveras med mustig tomatsås &"
+     },
+     {
+      "label": "",
+      "text": "ångkokt ris"
+     },
+     {
+      "label": "",
+      "text": "Philadelphia-gratinerad långafilé ackompanjeras av"
+     },
+     {
+      "label": "",
+      "text": "kokt potatis"
+     }
+    ]
    ],
-   "info": []
+   "info": [
+    "ÖPPET FÖR ALLA",
+    "Studentlunch 90 kr | Dagens lunch 99 kr",
+    "Mån-fre 11:00-13:30"
+   ]
   },
   {
    "id": "bacchus",
@@ -40,26 +117,26 @@
    "url": "https://www.trollhattan.fh.se/sv/restaurang/dagens-lunch",
    "fb": null,
    "note": null,
-   "week": 47,
+   "week": 48,
    "days": [
     [
      {
       "label": "",
-      "text": "Vegobiff med kapris och lök, vispad persiljesmör, rårörda lingon och pepparstekt potatis."
+      "text": "Vegokorv halv special med potatismos samt Veronikas gurkmajonnäs."
      },
      {
       "label": "",
-      "text": "Pannbiff med kapris och lök samt pepparsås, bakade potatis och grönsaker."
+      "text": "Fläsknoisette med champinjonsås, haricots verts och råstekt potatis."
      },
      {
       "label": "",
-      "text": "Flygande Jacob med bacon, banan, jordnötter och pilaffris."
+      "text": "Parmabakad kycklingfilé med paprika och basilikasås, syltad sparris och råstekt potatis."
      }
     ],
     [
      {
       "label": "",
-      "text": "Morotsbiffar med bakade rödbetor och husets potatispuré."
+      "text": "Tagliatelle serveras med krämig portabellosvampsås, rostade kikärtor och zucchini."
      },
      {
       "label": "",
@@ -67,55 +144,38 @@
      },
      {
       "label": "",
-      "text": "Dagens fångst smörstekt med paprika. Serveras med skagensås samt ljummen bulgursallad."
+      "text": "Dagens fångst, rimmad, kokt med brynt smör, gröna ärtor, pepparrot och potatispuré"
      }
     ],
     [
      {
       "label": "",
-      "text": "Vego Wallenbergare med brynt smör, gröna ärtor, rårörda lingon och husets potatispuré."
+      "text": "Quinoabiff med fänkål, kokt potatis, grön ärtpuré, löksky och citron."
      },
      {
       "label": "",
-      "text": "Smörstekt laxfjärril med kryddsmör och juliennegrönsaker. Serveras med potatis och palsternackspuré."
+      "text": "Kreolsk kycklinggryta med kabanosskorv. Serveras med lök och paprikaris."
      },
      {
       "label": "",
-      "text": "Wallenbergare med brynt smör, gröna ärtor, rårörda lingon och husets potatispuré."
+      "text": "Husets pannbiff med sidfläsk, syltlök champinjonsky och ugnstekt potatis"
      }
     ],
     [
      {
       "label": "",
-      "text": "Spenatsoppa med ägghalva och hembakat bröd."
+      "text": "Skogens svampsoppa och pannkaksbuffé, sylt och grädde."
      },
      {
       "label": "",
-      "text": "Husets ärtsoppa eller köttsoppa med pannkaksbuffé, sylt och vispad grädde."
+      "text": "Gulaschsoppa eller ärtsoppa med pannkaksbuffé, sylt och grädde."
      },
      {
       "label": "",
-      "text": "Mios nudelwok Thai style med kyckling och grönsaker."
+      "text": "Dagens fångst med bakad fänkål, tomat och dillsås samt pocherad pilaffris."
      }
     ],
-    [
-     {
-      "label": "",
-      "text": "Bakad zucchini med västerbottenost, surkål och rostad potatis."
-     },
-     {
-      "label": "",
-      "text": "Bräserad slottsstek med gräddsås, pressgurka och kokt potatis."
-     },
-     {
-      "label": "",
-      "text": "Krämig pasta med oxfilé, mild grönpeppar, champinjoner och dijonsenap."
-     },
-     {
-      "label": "",
-      "text": "Vaniljglass med varma bär."
-     }
-    ]
+    []
    ],
    "info": [
     "Dagens lunch 135 kr 11:30 - 14:00",
@@ -132,24 +192,24 @@
    "url": "https://www.odenbistro.com/menyer",
    "fb": null,
    "note": null,
-   "week": 47,
+   "week": 48,
    "days": [
     [
      {
       "label": "Kött",
-      "text": "Entrecoté med pepparsås, serveras med rostad potatis."
+      "text": "Kåldolmar med brunsås och rårörda lingon, serveras med potatismos."
      },
      {
       "label": "Fisk",
-      "text": "Pocherad fiskfilé med spenat sås, serveras med kokt potatis."
+      "text": "Panerad fiskfilé med remouladsås, serveras med kokt potatis."
      },
      {
       "label": "Pasta",
-      "text": "Pasta med fläskkött i champinjonsås, toppas med parmesanost."
+      "text": "Pasta med nötkött i champinjonsås, toppas med parmesanost."
      },
      {
       "label": "Vegan",
-      "text": "pumpabiffar med kall sås, serveras med pommes frites."
+      "text": "Vegansk schnitzel med dragoncreme, serveras med pommes frites."
      },
      {
       "label": "Vegan",
@@ -163,15 +223,15 @@
      },
      {
       "label": "Fisk",
-      "text": "Fisklasagne."
+      "text": "Pocherad fiskfilé med äggsås, serveras med potatismos."
      },
      {
       "label": "Pasta",
-      "text": "Pasta med nötkött i gräddsås, toppas med parmesanost."
+      "text": "Pasta med kyckling i ostsås, toppas med parmesanost."
      },
      {
       "label": "Vegan",
-      "text": "pumpabiffar med kall sås, serveras med pommes frites."
+      "text": "Vegansk schnitzel med dragoncreme, serveras med pommes frites."
      },
      {
       "label": "Vegan",
@@ -181,19 +241,19 @@
     [
      {
       "label": "Kött",
-      "text": "Panerad kycklingfilé med tomatsås och tzatziki, serveras med pommes frites."
+      "text": "Flygande jakob (kyckling med bananer och jordnötter), serveras med rostad potatis."
      },
      {
       "label": "Fisk",
-      "text": "Havets wallenbergare med sandefjordsås, serveras med potatismos."
+      "text": "Stekt laxfilé med gräslökssås, serveras med kokt potatis."
      },
      {
       "label": "Pasta",
-      "text": "Pasta med räkor i hummersås, toppas med parmesanost.. ."
+      "text": "Pasta bolognese, toppas med parmesanost."
      },
      {
       "label": "Vegan",
-      "text": "pumpabiffar med kall sås, serveras med pommes frites."
+      "text": "Vegansk schnitzel med dragoncreme, serveras med pommes frites."
      },
      {
       "label": "Vegan",
@@ -203,7 +263,7 @@
     [
      {
       "label": "Kött",
-      "text": "Hemlagad pannbiff med rödvinsås och rårörda lingon, serveras med kokt potatis."
+      "text": "Hemlagad köttgryta med gräddfil, serveras med kokt potatis."
      },
      {
       "label": "Fisk",
@@ -215,7 +275,7 @@
      },
      {
       "label": "Vegan",
-      "text": "pumpabiffar med kall sås, serveras med pommes frites."
+      "text": "Vegansk schnitzel med dragoncreme, serveras med pommes frites."
      },
      {
       "label": "Vegan",
@@ -225,19 +285,19 @@
     [
      {
       "label": "Kött",
-      "text": "Fläskschnitzel med bearnaisesås, serveras med friterad potatis slantar."
+      "text": "Stekt fläsknoisette med bearnaisesås, serveras med pommes frites."
      },
      {
       "label": "Fisk",
-      "text": "Stekt laxfilé med senapssås, serveras med potatismos."
+      "text": "Stekt laxfilé med gräslökssås, serveras med kokt potatis."
      },
      {
       "label": "Pasta",
-      "text": "Lyxpasta."
+      "text": "Pasta med räkor i hummersås, toppas med parmesanost."
      },
      {
       "label": "Vegan",
-      "text": "pumpabiffar med kall sås, serveras med pommes frites."
+      "text": "Vegansk schnitzel med dragoncreme, serveras med pommes frites."
      },
      {
       "label": "Vegan",
