@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-24T14:44:06.513Z",
+ "fetched": "2026-11-25T14:08:34.301Z",
  "restaurants": [
   {
    "id": "sour",
@@ -175,7 +175,12 @@
       "text": "Dagens fångst med bakad fänkål, tomat och dillsås samt pocherad pilaffris."
      }
     ],
-    []
+    [
+     {
+      "label": "",
+      "text": "Restaurangen är stängd."
+     }
+    ]
    ],
    "info": [
     "Dagens lunch 135 kr 11:30 - 14:00",
